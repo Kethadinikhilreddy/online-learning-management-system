@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+.batch-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.batch-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+.empty {
+    text-align: center;
+    color: #555;
+}
+
+
+
+.student-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.card-buttons {
+    margin-top: 10px;
+}
+
+.view-btn, .delete-btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    margin-right: 10px;
+}
+
+.view-btn {
+    background-color: #28a745;
+}
+
+.view-btn:hover {
+    background-color: #1e7e34;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+
+
+

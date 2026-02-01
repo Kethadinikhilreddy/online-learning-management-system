@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d4350, #a43931);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #3498db;
+}
+
+/* Error message */
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    min-height:5px;
+    margin-top: 2px;
+    display: block;
+    margin-left: 330px;
+}
+
+.errorr {
+    color: #e74c3c;
+    font-size: 14px;
+    min-height:1px;
+    margin-top: 4px;
+    display: block;
+}
+
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+h4 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: normal;
+    color: #555;
+}
+
+
+h4 a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+h4 a:hover {
+    text-decoration: underline;
+}
+
+
+.student-form {
+    width: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+
+.student-form .field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.student-form label {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+
+.student-form input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+
+.student-form button,
+.student-form h4,
+.student-form span {
+    grid-column: span 2;
+}
+
+
+.student-form button {
+    margin-top: 6px;
+}
+
+.student-form .error {
+    grid-column: span 2;
+}
+
