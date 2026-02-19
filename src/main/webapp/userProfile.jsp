@@ -52,11 +52,11 @@
 		<div class="profile-actions">
         <a href="userHome.jsp" class="btn">Back</a>
         <a href="updateUser.jsp?id=<%= user.getId() %>" class="btn">Update</a>
-        <a href="<%= request.getContextPath() %>/delete?message=User&id=<%= user.getId() %>" 
-   class="btn danger" 
-   onclick="return confirm('Are you sure you want to delete your account?');">
-   Delete
-</a>
+        <form action="delete" method="post" onsubmit="return confirm('Are you sure you want to delete this student?');" style="display:inline;">
+        <input type="hidden" name="message" value="User">
+        <input type="hidden" name="id" value="<%= user.getId() %>">
+        <button type="submit" class="btn danger">Delete</button>
+    </form>
 
 
     	</div>
